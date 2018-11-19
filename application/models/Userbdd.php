@@ -1,13 +1,15 @@
 <?php
-class Userbdd extends CI_Model {
+class Userbdd extends CI_Model
+{
 
-    function __construct() {
-        parent:: __construct();
+    public function __construct()
+    {
+        parent::__construct();
         $this->load->database('user');
     }
 
-    
-    public function get($id = NULL) {
+    public function get($id = null)
+    {
         $queryString = "SELECT * FROM user";
         if (isset($id)) {
             $queryString += " WHERE id = $id";
@@ -16,16 +18,18 @@ class Userbdd extends CI_Model {
         return $query->result();
     }
 
-    public function insert($user) {
-        $queryString = "INSERT INTO user(nom, mail) 
-        VALUES ('".$user['nom']."', '"
-        .$user['mail']."')";
+    public function insert($user)
+    {
+        $queryString = "INSERT INTO user(nom, mail)
+        VALUES ('" . $user['nom'] . "', '"
+            . $user['mail'] . "')";
         $query = $this->db->query($queryString);
         return $query;
 
     }
 
-    public function edit($id, $data) {
+    public function edit($id, $data)
+    {
         $nom = $data['nom'];
         $mail = $data['mail'];
         $queryString = "UPDATE user
@@ -36,18 +40,19 @@ class Userbdd extends CI_Model {
         return $query;
     }
 
-    public function delete($id) {
+    public function delete($id)
+    {
         $queryString = "DELETE FROM user
         WHERE id = $id";
         $query = $this->db->query($queryString);
         return $query;
     }
 
-        
-    public function listerTous() {
+    public function listerTous()
+    {
         $this->load->database('concerts');
-        $queryString = "SELECT c.date_concert, c.heure_ouverture, c.heure_debut, c.heure_fin, c.tarif_plein, c.tarif_reduit, c.lien_resa, c.illustration, 
-        p1.nom as p1_nom, p1.siteweb as p1_siteweb, 
+        $queryString = "SELECT c.date_concert, c.heure_ouverture, c.heure_debut, c.heure_fin, c.tarif_plein, c.tarif_reduit, c.lien_resa, c.illustration,
+        p1.nom as p1_nom, p1.siteweb as p1_siteweb,
         p2.nom as p2_nom, p2.siteweb as p2_siteweb,
         l.nom, l.adresse, l.code_postal, l.ville, l.latitude, l.longitude, l.tel, l.siteweb
         FROM concert c
@@ -59,22 +64,22 @@ class Userbdd extends CI_Model {
         return $query->result();
     }
 
-    public function insert($concert) {
-        $this->load->database('concerts');
-        $queryString = "INSERT INTO concert(date_concert, heure_ouverture, heure_debut, heure_fin, tarif_plein, tarif_reduit, lien_resa, illustration, id_lieu, premiere_partie, seconde_partie) 
-        VALUES ('".$concert['date-concert']."', '"
-        .$concert['heure-ouverture']."', '"
-        .$concert['heure-debut']."', '"
-        .$concert['heure-fin']."', '"
-        .$concert['tarif']."', '"
-        .$concert['tarif-reduit']."', '"
-        .$concert['lien-resa']."', '"
-        .$concert['illustration']."', '"
-        .$concert['lieu']."', '"
-        .$concert['premiere-partie']."', '"
-        .$concert['seconde-partie']."')";
-        $query = $this->db->query($queryString);
-        return $query;
-
+    // public function insert($concert) {
+    //     $this->load->database('concerts');
+    //     $queryString = "INSERT INTO concert(date_concert, heure_ouverture, heure_debut, heure_fin, tarif_plein, tarif_reduit, lien_resa, illustration, id_lieu, premiere_partie, seconde_partie)
+    //     VALUES ('".$concert['date-concert']."', '"
+    //     .$concert['heure-ouverture']."', '"
+    //     .$concert['heure-debut']."', '"
+    //     .$concert['heure-fin']."', '"
+    //     .$concert['tarif']."', '"
+    //     .$concert['tarif-reduit']."', '"
+    //     .$concert['lien-resa']."', '"
+    //     .$concert['illustration']."', '"
+    //     .$concert['lieu']."', '"
+    //     .$concert['premiere-partie']."', '"
+    //     .$concert['seconde-partie']."')";
+    //     $query = $this->db->query($queryString);
+    //     return $query;
+    // }
 
 }

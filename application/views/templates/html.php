@@ -1,14 +1,20 @@
 <!-- https://stackoverflow.com/questions/9540576/header-and-footer-in-codeigniter -->
-
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+?>
 <!DOCTYPE html>
 <html lang="en">
-    <? $this->load->view('head'); ?>
+    <?php $this->load->view('templates/head');?>
     <body>
     <div id="mainWrap">
-        <? $this->load->view('header'); ?>
-        <? //FINALLY LOAD THE VIEW!!! ?>
-        <? $this->load->view($view, $data); ?>
-        <? $this->load->view('footer'); ?>
+        <?php $this->load->view('templates/header');?>
+        <?php $this->load->view($view, $data);?>
+        <?php $this->load->view('templates/footer');?>
     </div>
-</body>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+    </script>
+    </body>
 </html>
