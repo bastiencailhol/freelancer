@@ -11,16 +11,9 @@ class MY_Loader extends CI_Loader
 
             return $content;
         else:
-            // $this->view('templates/header', $vars);
-            // $this->view('templates/html', $vars);
-            // $this->view('templates/footer', $vars);
-
             $d['view'] = $template_name;
             $d['data'] = $vars;
-
-            $this->view('templates/header', $vars);
             $this->view('templates/html', $d);
-            $this->view('templates/footer', $vars);
         endif;
     }
 }
