@@ -15,12 +15,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
         <!-- Core -->
-        <script src="../assets/vendor/jquery/jquery.min.js"></script>
-        <script src="../assets/vendor/popper/popper.min.js"></script>
-        <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
-        <script src="../assets/vendor/headroom/headroom.min.js"></script>
+        <script src="<?=base_url()?>assets/vendor/jquery/jquery.min.js"></script>
+        <script src="<?=base_url()?>assets/vendor/popper/popper.min.js"></script>
+        <script src="<?=base_url()?>assets/vendor/bootstrap/bootstrap.min.js"></script>
+        <script src="<?=base_url()?>assets/vendor/headroom/headroom.min.js"></script>
         <!-- Argon JS -->
-        <script src="../assets/js/argon.js?v=1.0.1"></script>
+        <script src="<?=base_url()?>assets/js/argon.js?v=1.0.1"></script>
 
     </body>
 </html>
