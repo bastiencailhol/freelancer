@@ -13,4 +13,8 @@
 
     <!-- Theme CSS -->
     <link type="text/css" href="<?=base_url();?>assets/css/argon.min.css" rel="stylesheet">
+
+    <!-- PatchWork Stylesheets -->
+    <link href="<?=base_url();?>assets/css/global.css" rel="stylesheet">
+    <link href="<?=base_url();?>assets/css/<?=$view?>.css" rel="stylesheet">
 </head>

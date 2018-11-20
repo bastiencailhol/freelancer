@@ -1,0 +1,10 @@
+.banner-main {
+    background-image: url('../img/patterns/banner.jpg');
+}
+
+.banner-main .parallax {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 85%;
+}
