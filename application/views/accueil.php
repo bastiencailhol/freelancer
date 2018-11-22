@@ -11,7 +11,7 @@
 				<p class="text-shadow mb-5">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
 					nisi ut aliquip ex ea commodo consequat.</p>
-				<button type="button" class="btn btn-primary">EXPECTEUR</button>
+				<button type="button" class="btn btn-warning">EXPECTEUR</button>
 				<button type="button" class="btn btn-secondary">CUPIDATAT</button>
 			</div>
 		</div>
@@ -104,7 +104,7 @@
 			<div class="row">
 				<?php for ($i = 0; $i < 4; $i++): ?>
 				<div class="col-lg-6 mb-4">
-					<div class="card shadow border-0 bg-white p-3">
+					<div class="card shadow--hover border-0 bg-white p-3">
 						<div class="row">
 							<div class="col-6">
 								<div class="text-center">
@@ -144,6 +144,9 @@
 					</div>
 				</div>
 				<?php endfor?>
+			</div>
+			<div class="text-center btn-fade">
+				<button type="button" class="btn btn-warning">TROUVER UN FREELANCE</button>
 			</div>
 		</div>
 	</div>

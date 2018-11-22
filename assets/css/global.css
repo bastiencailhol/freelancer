@@ -60,12 +60,6 @@ img {
 .fade-bottom {
     position: relative
 }
-.fade-bottom.fade-secondary {
-    color: var(--secondary);
-}
-.fade-bottom > * {
-    color: var(--primary-dark);
-}
 .fade-bottom::after {
     content: '';
     position: absolute;
@@ -73,5 +67,10 @@ img {
     left: 0;
     height: 200px;
     width: 100%;
-    background-image: linear-gradient(transparent, currentColor);
+    background-image: linear-gradient(transparent,var(--secondary) 40%);
+}
+.fade-bottom .btn-fade {
+    position: relative;
+    margin-top: -40px;
+    z-index: 1;
 }
