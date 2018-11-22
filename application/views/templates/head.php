@@ -10,11 +10,11 @@
     <!-- Icons -->
     <link href="<?=base_url();?>assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
     <!-- Theme CSS -->
-    <link type="text/css" href="<?=base_url();?>assets/css/argon.min.css" rel="stylesheet">
+    <link type="text/css" href="<?=base_url();?>assets/css/argon.css" rel="stylesheet">
 
     <!-- PatchWork Stylesheets -->
     <link href="<?=base_url();?>assets/css/global.css" rel="stylesheet">
