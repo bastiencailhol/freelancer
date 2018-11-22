@@ -32,6 +32,7 @@
     --lighter: #ced4da;
     --lightest: #e9ecef;
     --primary: #5e72e4;
+    --primary-dark: #525f7f;
     --secondary: #f4f5f7;
     --success: #2dce89;
     --info: #11cdef;
@@ -100,7 +101,7 @@ body
 
     text-align: left;
 
-    color: #525f7f;
+    color: var(--primary-dark);
     background-color: #fff;
 }
 
@@ -2209,7 +2210,7 @@ pre code
 
 .table .thead-light th
 {
-    color: #525f7f;
+    color: var(--primary-dark);
     border-color: #dee2e6; 
     background-color: var(--lightest);
 }
@@ -2445,7 +2446,7 @@ select.form-control:focus::-ms-value
     padding-top: .625rem;
     padding-bottom: .625rem;
 
-    color: #525f7f;
+    color: var(--primary-dark);
     border: solid transparent;
     border-width: 1px 0; 
     background-color: transparent;
@@ -4083,7 +4084,7 @@ input[type='button'].btn-block
 
     text-align: left;
 
-    color: #525f7f;
+    color: var(--primary-dark);
     border: 0 solid rgba(0, 0, 0, .15);
     border-radius: .3rem;
     background-color: #fff;
@@ -5191,7 +5192,7 @@ input[type='button'].btn-block
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link
 {
-    color: #525f7f;
+    color: var(--primary-dark);
     border-color: #dee2e6 #dee2e6 #fff; 
     background-color: #fff;
 }
@@ -6696,19 +6697,19 @@ input[type='button'].btn-block
 
     text-align: inherit; 
 
-    color: #525f7f;
+    color: var(--primary-dark);
 }
 .list-group-item-action:hover,
 .list-group-item-action:focus
 {
     text-decoration: none;
 
-    color: #525f7f;
+    color: var(--primary-dark);
     background-color: #f6f9fc;
 }
 .list-group-item-action:active
 {
-    color: #525f7f;
+    color: var(--primary-dark);
     background-color: var(--lightest);
 }
 
@@ -7616,7 +7617,7 @@ button.close
 {
     padding: .75rem .75rem;
 
-    color: #525f7f;
+    color: var(--primary-dark);
 }
 
 .carousel
@@ -12449,7 +12450,7 @@ a.text-darker:focus
 
 .text-body
 {
-    color: #525f7f !important;
+    color: var(--primary-dark) !important;
 }
 
 .text-muted
@@ -15185,7 +15186,7 @@ a.btn-icon-only
 .footer .nav .nav-item .nav-link:hover,
 .footer .footer-link:hover
 {
-    color: #525f7f !important;
+    color: var(--primary-dark) !important;
 }
 .footer .list-unstyled li a
 {
@@ -15199,7 +15200,7 @@ a.btn-icon-only
 }
 .footer .list-unstyled li a:hover
 {
-    color: #525f7f;
+    color: var(--primary-dark);
 }
 .footer .copyright
 {
@@ -16055,7 +16056,7 @@ textarea[resize='horizontal']
 
 .nav-link
 {
-    color: #525f7f;
+    color: var(--primary-dark);
 }
 .nav-link:hover
 {

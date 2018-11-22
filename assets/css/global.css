@@ -1,7 +1,77 @@
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-shadow {
+    text-shadow: 0 0 2rem rgba(0, 0, 0, 0.4), 0 1px 0.5rem rgba(0, 0, 0, 0.5)
+}
+
+.text-light
+{
+    color: var(--light) !important;
+}
+
+.rounded-2 {
+    border-radius: 0.5rem !important;
+}
+.rounded-3 {
+    border-radius: 1rem !important;
+}
+.rounded-4 {
+    border-radius: 2rem !important;
+}
+
 .parallax {
 
 }
 
 .banner {
     background-size: 100vw;
+}
+
+.quotes {
+    width: 1rem;
+    transform: translateY(-0.5rem);
+    margin-right: 0.5rem;
+}
+
+.text-no-wrap {
+    white-space: nowrap
+}
+
+.fade-bottom {
+    position: relative
+}
+.fade-bottom.fade-secondary {
+    color: var(--secondary);
+}
+.fade-bottom > * {
+    color: var(--primary-dark);
+}
+.fade-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(transparent, currentColor);
 }

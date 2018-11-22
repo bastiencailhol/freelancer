@@ -6,11 +6,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <html lang="en">
     <?php $this->load->view('templates/head', array('view' => $view));?>
     <body>
-        <div class="maquette">
-            <?php $this->load->view('templates/header');?>
-            <?php $this->load->view($view, $data);?>
-            <?php $this->load->view('templates/footer');?>
-        </div>
+        <?php $this->load->view('templates/header');?>
+        <?php $this->load->view($view, $data);?>
+        <?php $this->load->view('templates/footer');?>
 
 
 
