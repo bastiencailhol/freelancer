@@ -28,3 +28,21 @@
     transform: rotateZ(0deg) rotateY(3deg) scaleX(2);
     background-color: var(--gray);
 }
+
+.project-item {
+    background-size: cover;
+    width: 100%;
+	padding-bottom: 56.25%; /* 16:9 */
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.project-item > div {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background: rgba(0,0,0,.6);
+    color: var(--white);
+    transition: 0.1s ease-in-out;
+}
+.project-item:not(:hover) > div {
+    opacity: 0;
+}

@@ -151,3 +151,25 @@
 		</div>
 	</div>
 </section>
+<section class="section section-md bg-secondary">
+	<div class="container">
+		<h3 class="text-center mb-3">Projets réalisés.</h3>
+		<div class="row">
+			<?php for ($i = 0; $i < 6; $i++): ?>
+			<div class="col-lg-4 mb-4">
+				<div class="card shadow--hover border-0 bg-white">
+					<div class="project-item" style="background-image: url('<?=base_url()?>assets/img/desktops/desktop.jpg')">
+						<div class="d-flex flex-column p-3">
+							<p>Lorem ipsum dolor sit amet.</p>
+							<p class="text-right flex-grow-1">2000€</p>
+							<div class="text-center">
+								<button type="button" class="btn btn-warning">DÉPOSER MON PROJET</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php endfor?>
+		</div>
+	</div>
+</section>
