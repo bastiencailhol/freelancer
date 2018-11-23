@@ -16,7 +16,7 @@
 			</div>
 		</div>
 	</div>
-	<img src="<?=base_url()?>assets/img/people/happy_guy.png" alt="happy guy" class="parallax">
+	<img src="<?=base_url()?>/assets/img/people/happy_guy.png" alt="happy guy" class="parallax">
 </section>
 <section class="section section-md bg-secondary p-rel">
 	<div class="people-background mb-5">
@@ -26,14 +26,14 @@
 				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			</p>
 			<div class="card rounded-4 bg-white shadow border-0 p-4 mx-5 mb-4">
-				<p><img src="<?=base_url()?>assets/img/icons/quotes.svg" alt="quotes" class="quotes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				<p><img src="<?=base_url()?>/assets/img/icons/quotes.svg" alt="quotes" class="quotes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 			</div>
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="card bg-default shadow border-0 mt-5 ml-4 position-relative">
-						<img src="<?=base_url()?>assets/img/people/people_vert_1.jpg" alt="happy client" class="card-img-top">
+						<img src="<?=base_url()?>/assets/img/people/people_vert_1.jpg" alt="happy client" class="card-img-top">
 						<div class="position-absolute text-white text-center text-shadow people-card mb-3">
 							<p class="mb-0 font-weight-bold">Lorem</p>
 							<small>Lorem, ipsum.</small>
@@ -42,7 +42,7 @@
 				</div>
 				<div class="col-lg-3">
 					<div class="card bg-default shadow border-0 position-relative">
-						<img src="<?=base_url()?>assets/img/people/people_vert_2.jpg" alt="happy client" class="card-img-top">
+						<img src="<?=base_url()?>/assets/img/people/people_vert_2.jpg" alt="happy client" class="card-img-top">
 						<div class="position-absolute text-white text-center text-shadow people-card mb-3">
 							<p class="mb-0 font-weight-bold">Lorem</p>
 							<small>Lorem, ipsum.</small>
@@ -51,7 +51,7 @@
 				</div>
 				<div class="col-lg-3">
 					<div class="card bg-default shadow border-0 mt-5 position-relative">
-						<img src="<?=base_url()?>assets/img/people/people_vert_3.jpg" alt="happy client" class="card-img-top">
+						<img src="<?=base_url()?>/assets/img/people/people_vert_3.jpg" alt="happy client" class="card-img-top">
 						<div class="position-absolute text-white text-center text-shadow people-card mb-3">
 							<p class="mb-0 font-weight-bold">Lorem</p>
 							<small>Lorem, ipsum.</small>
@@ -60,7 +60,7 @@
 				</div>
 				<div class="col-lg-3">
 					<div class="card bg-default shadow border-0 mt-4 mr-4 position-relative">
-						<img src="<?=base_url()?>assets/img/people/people_vert_4.jpg" alt="happy client" class="card-img-top">
+						<img src="<?=base_url()?>/assets/img/people/people_vert_4.jpg" alt="happy client" class="card-img-top">
 						<div class="position-absolute text-white text-center text-shadow people-card mb-3">
 							<p class="mb-0 font-weight-bold">Lorem</p>
 							<small>Lorem, ipsum.</small>
@@ -92,7 +92,7 @@
 					<br>Deserunt necessitatibus voluptate minima pariatur dignissimos, vitae dolorem excepturi earum iusto officia?</p>
 			</div>
 			<div class="col-lg-8">
-				<img src="<?=base_url()?>assets/img/brands/showcase.png" alt="brands showcase">
+				<img src="<?=base_url()?>/assets/img/brands/showcase.png" alt="brands showcase">
 			</div>
 		</div>
 	</div>
@@ -108,7 +108,7 @@
 						<div class="row">
 							<div class="col-6">
 								<div class="text-center">
-									<img src="<?=base_url()?>assets/img/people/people_square_1.jpg" alt="" class="img-fluid rounded-circle" width="70px">
+									<img src="<?=base_url()?>/assets/img/people/people_square_1.jpg" alt="" class="img-fluid rounded-circle" width="70px">
 									<h5>James Trudaut</h5>
 									<p class="text-muted font-weight-bold">Front Engineer</p>
 									<div class="small mb-2">
@@ -158,7 +158,7 @@
 			<?php for ($i = 0; $i < 6; $i++): ?>
 			<div class="col-lg-4 mb-4">
 				<div class="card shadow--hover border-0 bg-white">
-					<div class="project-item" style="background-image: url('<?=base_url()?>assets/img/desktops/desktop.jpg')">
+					<div class="project-item" style="background-image: url('<?=base_url()?>/assets/img/desktops/desktop.jpg')">
 						<div class="d-flex flex-column p-3">
 							<p>Lorem ipsum dolor sit amet.</p>
 							<p class="text-right flex-grow-1">2000€</p>
