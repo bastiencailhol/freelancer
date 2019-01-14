@@ -21,9 +21,7 @@ class Accueil extends CI_Controller
      */
     public function index()
     {
-        $data['user'] = 'test';
-        // $this->load->view('accueil.php');
-        $this->load->template('accueil', $data);
+        $this->load->template('accueil');
 
     }
 

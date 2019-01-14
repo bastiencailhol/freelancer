@@ -4,6 +4,7 @@
 
 body {
     overflow-x: hidden;
+    background: var(--body);
 }
 
 h1,
@@ -32,6 +33,7 @@ img {
 
 .card {
     overflow: hidden;
+    box-shadow: 0 0 2rem 0 rgba(136,152,170,.15);
 }
 
 .d-flex {

@@ -34,6 +34,7 @@
     --primary: #5e72e4;
     --primary-dark: #525f7f;
     --secondary: #f4f5f7;
+    --body: #f8f9fe;
     --success: #2dce89;
     --info: #11cdef;
     --warning: #fb6340;
@@ -503,37 +504,43 @@ h6,
 }
 
 h1,
-.h1
+.h1,
+.f1
 {
     font-size: 2.5rem;
 }
 
 h2,
-.h2
+.h2,
+.f2
 {
     font-size: 2rem;
 }
 
 h3,
-.h3
+.h3,
+.f3
 {
     font-size: 1.75rem;
 }
 
 h4,
-.h4
+.h4,
+.f4
 {
     font-size: 1.5rem;
 }
 
 h5,
-.h5
+.h5,
+.f5
 {
     font-size: 1.25rem;
 }
 
 h6,
-.h6
+.h6,
+.f6
 {
     font-size: 1rem;
 }

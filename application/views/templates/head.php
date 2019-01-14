@@ -18,5 +18,6 @@
 
     <!-- PatchWork Stylesheets -->
     <link href="<?=base_url();?>assets/css/global.css" rel="stylesheet">
+    <link href="<?=base_url();?>assets/css/header.css" rel="stylesheet">
     <link href="<?=base_url();?>assets/css/<?=$view?>.css" rel="stylesheet">
 </head>
