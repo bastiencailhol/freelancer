@@ -42,7 +42,7 @@ img {
 }
 
 .d-flex {
-    width: 100% !important;
+    /* width: 100% !important; */
 }
 
 .lead {
@@ -64,9 +64,13 @@ header {
     z-index: 10;
 }
 
-.nav-logo {
+.header-logo {
    max-height: 100%;
    width: 200px;
+}
+
+.header-logo img {
+    width: 160px;
 }
 
 
@@ -137,7 +141,6 @@ header .focused .input-group-text {
     color: var(--lighter);
     height: 3rem;
     line-height: 3rem;
-    text-transform: uppercase;
     color: var(--light);
     font-weight: 600;
 
