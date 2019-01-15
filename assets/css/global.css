@@ -21,6 +21,10 @@ p {
     margin-bottom: 0;
 }
 
+li {
+    font-weight: 300;
+}
+
 img {
     max-width: 100%;
 }
@@ -33,11 +37,16 @@ img {
 
 .card {
     overflow: hidden;
+    border: 0;
     box-shadow: 0 0 2rem 0 rgba(136,152,170,.15);
 }
 
 .d-flex {
     width: 100% !important;
+}
+
+.lead {
+    margin-top: 0;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -98,3 +107,46 @@ img {
     margin-top: -40px;
     z-index: 1;
 }
+
+.fade-right::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 33%;
+    background-image: linear-gradient(to left, white 0.5rem, transparent);
+}
+.fade-left::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 33%;
+    background-image: linear-gradient(to right, white 0.5rem, transparent);
+}
+
+/* .carrousel-container {
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrousel-item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.carrousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carrousel-nav.prev {
+    left: 0.5rem;
+}
+.carrousel-nav.next {
+    right: 0.5rem;
+} */
