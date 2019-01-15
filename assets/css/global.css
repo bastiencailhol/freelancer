@@ -49,6 +49,113 @@ img {
     margin-top: 0;
 }
 
+
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- HEADER ---------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.nav-logo {
+   max-height: 100%;
+   width: 200px;
+}
+
+
+.input-group-with-button button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.input-group-with-button button {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+header .form-control,
+header .input-group-text {
+    height: auto;
+    background-color: var(--primary-dark) !important;
+    color: var(--lighter) !important;
+}
+header .focused .form-control,
+header .focused .input-group-text {
+    color: white !important;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- NAV ----------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+/* .nav-user {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+} 
+.navbar-nav .nav-link {
+    border-radius: 0;
+    color: var(--lighter);
+}
+.navbar-nav .nav-link.active {
+    background-color: var(--primary-dark);
+    position: relative;
+    color: var(--white);
+}
+.navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    height: 0.25rem;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-bottom: 0.25rem solid var(--warning);
+} */
+
+.menu {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    z-index: 10;
+    background: #454550 ;
+}
+
+.menu-item {
+    display: block;
+    position: relative;
+    color: var(--lighter);
+    height: 3rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--light);
+    font-weight: 600;
+
+}
+.menu-item:hover, .menu-item.active {
+    background: var(--primary-dark);
+    color: var(--lighter);
+}
+
+.menu-icon {
+    font-size: 14px;
+    width: 20px;
+}
+
+main {
+    padding-top: 60px;
+    padding-left: 200px;
+}
 /* -------------------------------------------------------------------------- */
 /* ---------------------------- CUSTOM CLASSES ------------------------------ */
 /* -------------------------------------------------------------------------- */

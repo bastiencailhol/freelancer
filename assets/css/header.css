@@ -1,29 +1,10 @@
-.nav-logo {
+/* .nav-logo {
     position: absolute;
     left: 0;
     height: 100%;
-}
+} */
 .nav-logo img {
     max-height: 100%;
-}
-
-.navbar-nav .nav-link {
-    border-radius: 0;
-    color: var(--lighter);
-}
-.navbar-nav .nav-link.active {
-    background-color: var(--primary-dark);
-    position: relative;
-    color: var(--white);
-}
-.navbar-nav .nav-link.active::after {
-    content: "";
-    position: absolute;
-    height: 0.25rem;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    border-bottom: 0.25rem solid var(--warning);
 }
 
 .input-group-with-button button {
@@ -45,10 +26,10 @@ header .focused .input-group-text {
     color: white !important;
 }
 
-.nav-user {
+/* .nav-user {
     position: absolute;
     right: 0;
     height: 100%;
     display: flex;
     align-items: center;
-}
+} */
