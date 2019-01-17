@@ -28,10 +28,33 @@
             </button> -->
     <?php if ($user): ?>
     <div class="d-flex align-items-baseline">
-      <div class="notifications-icon mr-4"><i class="fas fa-bell f5"></i></div>
-      <div class=" user-icon d-flex
-            align-items-center"><i class="fas fa-user-circle f5 mr-2"></i><i class="fas fa-caret-down"></i></div>
+      <div class="dropdown">
+        <button class="btn btn-flat" type="button" id="dropdownNotifications" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <i class="fas fa-bell f5"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownNotifications">
+          <ul>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-flat" type="button" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <div class="d-flex align-items-center"><i class="fas fa-user-circle f5 mr-1"></i><i class="fas fa-caret-down"></i></div>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownUser">
+          <ul>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+      </div>
+      <?php endif?>
     </div>
-    <?php endif?>
   </div>
 </header>

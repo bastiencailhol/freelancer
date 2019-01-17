@@ -130,7 +130,7 @@ header .focused .input-group-text {
     border-left: 4px;
 }
 .menu-item.active {
-    border-right: 4px solid var(--info);
+    border-right: 4px solid var(--orange-light);
 }
 
 .menu-icon {
@@ -244,3 +244,12 @@ main {
 .carrousel-nav.next {
     right: 0.5rem;
 } */
+
+.btn-flat {
+    color: var(--grey);
+    border: none;
+    background-color: unset;
+}
+.btn-flat:not(:last-child) {
+    margin: 0;
+}
