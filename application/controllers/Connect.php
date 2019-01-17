@@ -6,7 +6,11 @@ class Connect extends CI_Controller
 
     public function index()
     {
-        $arraydata = array('user' => 'toto');
+        $arraydata = array(
+            'name' => 'jacques',
+            'firstname' => 'jean',
+            'id' => 3,
+        );
 
         $this->session->set_userdata($arraydata);
 

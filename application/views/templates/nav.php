@@ -3,7 +3,7 @@
   <a href="<?=site_url()?>/dashboard" class="menu-item small px-2 <?=$view == 'dashboard' ? 'active' : ''?>">
     <i class="fas fa-home mr-2 menu-icon"></i>Tableau de bord
   </a>
-  <a href="<?=site_url()?>/projects" class="menu-item small px-2 <?=$view == 'projects' ? 'active' : ''?>">
+  <a href="<?=site_url()?>/propositions" class="menu-item small px-2 <?=$view == 'propositions' ? 'active' : ''?>">
     <i class="fas fa-scroll mr-2 menu-icon"></i>Propositions
   </a>
   <a href="<?=site_url()?>/projects" class="menu-item small px-2 <?=$view == 'projects' ? 'active' : ''?>">
