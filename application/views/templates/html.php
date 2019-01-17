@@ -11,7 +11,9 @@ $user = $this->session->userdata('user');
   <?php $this->load->view('templates/header', array('view' => $view, 'user' => $user));?>
   <?php $this->load->view('templates/nav');?>
   <main>
-    <?php $this->load->view($view, $data);?>
+    <div class="px-4 pt-3 pb-4">
+      <?php $this->load->view($view, $data);?>
+    </div>
   </main>
   <?php $this->load->view('templates/footer');?>
 

@@ -7954,6 +7954,9 @@ button.bg-primary:focus
 {
     background-color: var(--secondary) !important;
 }
+.bg-body {
+    background-color: var(--body) !important;
+}
 
 a.bg-secondary:hover,
 a.bg-secondary:focus,

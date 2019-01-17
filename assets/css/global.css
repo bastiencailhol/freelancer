@@ -4,7 +4,7 @@
 
 body {
     overflow-x: hidden;
-    background: var(--body);
+    background: var(--secondary);
 }
 
 h1,
@@ -41,9 +41,9 @@ img {
     box-shadow: 0 0 2rem 0 rgba(136,152,170,.15);
 }
 
-.d-flex {
-    /* width: 100% !important; */
-}
+/* .d-flex {
+    width: 100% !important;
+} */
 
 .lead {
     margin-top: 0;
@@ -62,6 +62,7 @@ header {
     left: 0;
     right: 0;
     z-index: 10;
+    background: var(--secondary);
 }
 
 .header-logo {
@@ -71,6 +72,11 @@ header {
 
 .header-logo img {
     width: 160px;
+}
+
+header .user-icon,
+header .notifications-icon {
+    color: var(--gray);
 }
 
 
@@ -99,32 +105,6 @@ header .focused .input-group-text {
 /* ---------------------------------- NAV ----------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-/* .nav-user {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-} 
-.navbar-nav .nav-link {
-    border-radius: 0;
-    color: var(--lighter);
-}
-.navbar-nav .nav-link.active {
-    background-color: var(--primary-dark);
-    position: relative;
-    color: var(--white);
-}
-.navbar-nav .nav-link.active::after {
-    content: "";
-    position: absolute;
-    height: 0.25rem;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    border-bottom: 0.25rem solid var(--warning);
-} */
-
 .menu {
     position: fixed;
     top: 60px;
@@ -132,27 +112,31 @@ header .focused .input-group-text {
     left: 0;
     width: 200px;
     z-index: 10;
-    background: #454550 ;
+    background: var(--secondary);
 }
 
 .menu-item {
     display: block;
     position: relative;
-    color: var(--lighter);
+    color: var(--gray);
     height: 3rem;
     line-height: 3rem;
-    color: var(--light);
     font-weight: 600;
 
 }
 .menu-item:hover, .menu-item.active {
-    background: var(--primary-dark);
-    color: var(--lighter);
+    background: var(--white);
+    color: var(--primary);
+    border-left: 4px;
+}
+.menu-item.active {
+    border-right: 4px solid var(--info);
 }
 
 .menu-icon {
     font-size: 14px;
     width: 20px;
+    text-align: center;
 }
 
 main {
