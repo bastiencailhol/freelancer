@@ -3,16 +3,17 @@
 }
 
 if (!function_exists('consoleLog')) {
-    function consoleLog($varname, $vardata)
+    function consoleLog($data)
     {
-        echo "<script>console.log('" . $varname . ":', ";
-        if (gettype($vardata) != 'string') {
-            echo "'";
-        }
-        var_export($vardata);
-        if (gettype($vardata) != 'string') {
-            echo "'";
-        }
-        echo ")</script>";
+        echo "<script>console.log(" . json_encode($data) . ");</script>";
+    }
+}
+
+if (!function_exists('dumpLog')) {
+    function dumpLog($data)
+    {
+        echo "<pre>";
+        var_dump($data);
+        echo "</pre>";
     }
 }

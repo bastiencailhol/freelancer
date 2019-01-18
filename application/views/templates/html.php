@@ -1,15 +1,17 @@
 <!-- https://stackoverflow.com/questions/9540576/header-and-footer-in-codeigniter -->
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-$user = $this->session->userdata('user');
+$userId = $this->session->userdata('id');
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <?php $this->load->view('templates/head', array('view' => $view));?>
 
 <body class="">
-  <?php $this->load->view('templates/header', array('view' => $view, 'user' => $user));?>
-  <?php $this->load->view('templates/nav');?>
+  <!-- TO DO : séparer header connecté et header anonyme -->
+  <?php $this->load->view('templates/header', array('view' => $view, 'userId' => $userId));?>
+
+  <?php if ($userId) {$this->load->view('templates/nav');}?>
   <main>
     <div class="px-4 pt-3 pb-4">
       <?php $this->load->view($view, $data);?>

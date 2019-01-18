@@ -8,11 +8,42 @@ class Projectsbdd extends CI_Model
         $this->load->database('freelancer');
     }
 
-    public function getCurrentProjects($userId)
+    public function getUserProjects($userId)
     {
-        $queryString = "SELECT * FROM projects WHERE fk_user = $userId";
+        $queryString = "SELECT p.id as projectId,
+        p.budget,
+        p.collab_started_at,
+        p.collab_ended_at,
+        p.created_at,
+        p.title,
+        p.image,
+        p.is_deleted,
+        p.is_published,
+        p.fk_user_collab,
+        u.firstname,
+        u.name
+        FROM project AS p
+        LEFT JOIN user AS u
+        ON p.fk_user_collab = u.id
+        WHERE p.fk_user = $userId
+        AND p.is_deleted = 0";
+        consoleLog($queryString);
         $query = $this->db->query($queryString);
-        return $query->result();
+        $result = $query->result();
+        $collab = array_filter($result, function ($project) {
+            return !is_null($project->fk_user_collab) && is_null($project->collab_ended_at);
+        });
+        $drafts = array_filter($result, function ($project) {
+            return $project->is_published == 0 && is_null($project->fk_user_collab);
+        });
+        $published = array_filter($result, function ($project) {
+            return $project->is_published == 1;
+        });
+        $finished = array_filter($result, function ($project) {
+            return !is_null($project->collab_ended_at);
+        });
+
+        return (object) array("collab" => $collab, "drafts" => $drafts, "published" => $published, "finished" => $finished);
     }
 
     // public function get($id = null)

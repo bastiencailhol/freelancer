@@ -3,7 +3,7 @@
     <img src="<?=base_url();?>assets/img/brand/logo_horiz.png" alt="Patchwork">
   </a>
   <div class="flex-grow-1 d-flex align-items-center justify-content-between px-4">
-    <?php if (!$user): ?>
+    <?php if (!$userId): ?>
     <div class="form-group mb-0">
       <div class="input-group input-group-alternative input-group-with-button">
         <div class="input-group-prepend">
@@ -17,7 +17,7 @@
     <div></div>
     <?php endif?>
 
-    <?php if (!$user): ?>
+    <?php if (!$userId): ?>
     <div class="navbar-nav">
       <a href="" class="nav-link mr-3">Je suis freelance</a>
       <a href="<?=site_url()?>/connect" class="nav-link">Connexion</a>
@@ -26,7 +26,7 @@
     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button> -->
-    <?php if ($user): ?>
+    <?php if ($userId): ?>
     <div class="d-flex align-items-baseline">
       <div class="dropdown">
         <button class="btn btn-flat" type="button" id="dropdownNotifications" data-toggle="dropdown" aria-haspopup="true"

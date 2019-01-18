@@ -1,5 +1,4 @@
 <nav class="menu pt-3">
-  <?php if ($user): ?>
   <a href="<?=site_url()?>/dashboard" class="menu-item small px-2 <?=$view == 'dashboard' ? 'active' : ''?>">
     <i class="fas fa-home mr-2 menu-icon"></i>Tableau de bord
   </a>
@@ -18,5 +17,4 @@
   <a href="<?=site_url()?>/messages" class="menu-item small px-2 <?=$view == 'messages' ? 'active' : ''?>">
     <i class="fas fa-search mr-2 menu-icon"></i>Rechercher
   </a>
-  <?php endif?>
 </nav>

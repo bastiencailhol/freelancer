@@ -7,10 +7,9 @@ class Projects extends CI_Controller
     public function index()
     {
         $this->load->model('projectsbdd');
-        // echo "<script>console.log('" . $this->session->id . "')</script>";
-        consoleLog('userId', $_SESSION['id']);
-        $data['projects'] = $this->projectsbdd->getCurrentProjects($this->session->id);
-        $this->load->template('projects');
+        $data['projects'] = $this->projectsbdd->getUserProjects($this->session->id);
+        consoleLog($data);
+        $this->load->template('projects', $data);
     }
 
 }
